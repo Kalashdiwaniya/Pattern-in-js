@@ -1,0 +1,18 @@
+ function printF() {
+    let pattern = "";
+
+    for (let i = 1; i <= 7; i++) {
+        for (let j = 1; j <= 8; j++) {
+            if (i==j||j+i==8) { 
+                pattern += "* ";
+            } else {
+                pattern += "  ";
+            }
+        }
+        pattern += "\n";
+    }
+
+    console.log(pattern);
+}
+
+ printF();
